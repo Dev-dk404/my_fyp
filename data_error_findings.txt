@@ -1,0 +1,9 @@
+Data Error and complications Findings 
+
+1) Same players have multiple entries with different values
+	for eg: player_api_id 660145 has 3 entries with different overall ratings, crossing etc
+	update: might be because attributes change every season, keeping the first entry only for the time being,
+	might chnage it later
+2) Player names and attributes are in two different tables, so I joined both tables and made one dataframe from
+	sql join.
+3) Both players table and match table have date. So, need to use attributes of players corresponding the date
